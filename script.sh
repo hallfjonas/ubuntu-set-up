@@ -1,13 +1,13 @@
 #!/bin/bash
 
 ##
-## Install script for basic requirements. Run this with sudo privileges.
+## Install script for basic requirements.
 ##
 
-apt-get update
+sudo apt-get update
 
 # git, vim, build essentials
-apt-get install -y git-all \
+sudo apt-get install -y git-all \
 	vim \
 	build-essential \
 	manpages-dev \
@@ -28,15 +28,15 @@ git config --global user.email $email
 git config --global user.name $name
 
 # VSCode
-snap install --classic code
+sudo snap install --classic code
 code --install-extension ms-vscode.cpptools
 code --install-extension james-yu.latex-workshop
 
 # Mattermost
-snap install mattermost-desktop --beta
+sudo snap install mattermost-desktop --beta
 
 # Valgrind (version >= 3.17)
-snap install --classic valgrind
+sudo snap install --classic valgrind
 
 # Clone gitlab repos
 cd ~
@@ -64,6 +64,6 @@ rm casadi-linux-matlabR2014b-v3.5.5.tar.gz
 # Zoom
 cd ~
 wget https://zoom.us/client/latest/zoom_amd64.deb
-dpkg -i zoom_amd64.deb
+sudo dpkg -i zoom_amd64.deb
 rm zoom_amd64.deb
 
