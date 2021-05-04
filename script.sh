@@ -19,8 +19,13 @@ apt-get install -y git-all \
 	libxcb-xinerama0
 	
 # Git settings
-git config --global user.email "hall.f.jonas@gmail.com"
-git config --global user.name "Jonas Hall"
+echo "Enter global git user.email: "
+read email
+
+echo "Enter global git user.name: "
+read name
+git config --global user.email $email
+git config --global user.name $name
 
 # VSCode
 snap install --classic code
