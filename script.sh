@@ -13,6 +13,7 @@ sudo apt-get install -y git-all \
 	manpages-dev \
 	cmake \
 	texlive-base \
+	latexmk \
 	libreoffice \
 	cups \
 	libxcb-xtest0 \
