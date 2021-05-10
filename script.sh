@@ -12,7 +12,7 @@ sudo apt-get install -y git-all \
 	build-essential \
 	manpages-dev \
 	cmake \
-	texlive-base \
+	texlive-full \
 	latexmk \
 	libreoffice \
 	cups \
@@ -32,6 +32,8 @@ git config --global user.name $name
 sudo snap install --classic code
 code --install-extension ms-vscode.cpptools
 code --install-extension james-yu.latex-workshop
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension eamodio.gitlens
 
 # Mattermost
 sudo snap install mattermost-desktop --beta
