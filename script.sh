@@ -34,7 +34,6 @@ sudo snap install --classic code
 code --install-extension ms-vscode.cpptools							# CPP 
 code --install-extension james-yu.latex-workshop					# Latex
 code --install-extension streetsidesoftware.code-spell-checker		# Spell Checker
-code --install-extension eamodio.gitlens							# Git
 code --install-extension twxs.cmake									# Cmake
 
 # Mattermost
