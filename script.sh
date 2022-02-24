@@ -17,7 +17,8 @@ sudo apt-get install -y git-all \
 	libreoffice \
 	cups \
 	libxcb-xtest0 \
-	libxcb-xinerama0
+	libxcb-xinerama0 \
+	libegl1-mesa			# required for zoom
 	
 # Git settings
 echo "Enter global git user.email: "
@@ -41,29 +42,6 @@ sudo snap install mattermost-desktop --beta
 
 # Valgrind (version >= 3.17)
 sudo snap install --classic valgrind
-
-# Clone gitlab repos
-cd ~
-git clone --recurse-submodules -j8 https://gitlab.syscop.de/jonas.hall/lcqpOASES
-
-# Private repo: tracking work time
-# git clone https://gitlab.syscop.de/jonas.hall/worktime
-
-# Install/Download ACADOS
-cd ~
-git clone --recurse-submodules -j8 https://github.com/acados/acados.git
-# mkdir -p acados/build
-# cd acados/build
-# cmake ..
-# make install
-
-# Install CasADi for MATLAB
-cd ~
-mkdir -p casadi-matlab2014b-v3.5.5
-cd casadi-matlab2014b-v3.5.5
-wget https://github.com/casadi/casadi/releases/download/3.5.5/casadi-linux-matlabR2014b-v3.5.5.tar.gz
-tar -xf casadi-linux-matlabR2014b-v3.5.5.tar.gz
-rm casadi-linux-matlabR2014b-v3.5.5.tar.gz
 
 # Zoom
 cd ~
